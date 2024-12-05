@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - AI/ML Engineering Tutorials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            animation: slideDown 0.6s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background-color: #003366;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        section {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            max-width: 1000px;
+            margin: 3rem auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #003366;
+        }
+
+        .tutorial {
+            background-color: #28a745;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tutorial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tutorial h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tutorial p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tutorial ul {
+            text-align: left;
+            margin-bottom: 1.5rem;
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+
+        .pdf-viewer {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pdf-viewer iframe {
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+            font-size: 1.1rem;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dark-mode-toggle {
+            margin: 1rem;
+            padding: 1rem;
+            cursor: pointer;
+            border: 2px solid #003366;
+            background-color: #ffdd57;
+            color: #003366;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark-mode-toggle:hover {
+            background-color: #003366;
+            color: white;
+        }
+
+        .live-chart-support {
+            background-color: #17a2b8;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .live-chart-support iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .project-repository {
+            background-color: #ffc107;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-repository a {
+            color: #003366;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-repository a:hover {
+            text-decoration: underline;
+        }
+
+        .quiz-compiler-links {
+            background-color: #6f42c1;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-compiler-links a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .quiz-compiler-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 1rem 0;
+            }
+
+            section {
+                padding: 2rem;
+            }
+
+            .tutorial {
+                padding: 1.5rem;
+            }
+
+            .pdf-viewer iframe {
+                height: 400px;
+            }
+        }
+        
+        .payment-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-container h2 {
+            color: #003366;
+            margin-bottom: 1rem;
+        }
+
+        .payment-container p {
+            margin-bottom: 1rem;
+        }
+
+        #paypal-button-container {
+            margin-top: 2rem;
+        }
+
+        #result-message {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AI/ML Engineering Tutorials</h1>
+        <p>Learn, Explore, and Implement AI/ML concepts and tools</p>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/security">Security</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="payment-container" style="background-color: white !important;">
+        <h2>Access AI/ML Engineering Tutorials</h2>
+        <p>To access our comprehensive AI/ML Engineering Tutorials, please complete the payment below.</p>
+        <p><em>Price: $20</em></p>
+        <div id="paypal-button-container"></div>
+        <div id="result-message"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI/ML Engineering Tutorials by Code Flux. <br> <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+    </footer>
+
+   <!-- Replace the existing PayPal script with this one -->
+   <script
+            src="https://www.paypal.com/sdk/js?client-id=AeRRud6E1YCsRUXFGKENChRJrjO9cFdrdSmcuj-m8zer9glCyFiU5jSJQoMQPPI6e4JxDyulTG47OvsJ&buyer-country=US&currency=USD&components=buttons&enable-funding=card&disable-funding=venmo,paylater"
+            data-sdk-integration-source="developer-studio"
+        ></script>
+        <script>
+          function resultMessage(message) {
+              const resultElement = document.getElementById('result-message');
+              resultElement.innerHTML = message;
+          }
+      
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'gold',
+                  layout: 'vertical',
+                  label: 'pay'
+              },
+      
+              createOrder: function(data, actions) {
+                  return fetch('/api/orders', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify({
+                          cart: [{
+                              id: "MLAI_COURSE",
+                              quantity: "1"
+                          }]
+                      })
+                  }).then(function(res) {
+                      return res.json();
+                  }).then(function(orderData) {
+                      if (orderData.error) {
+                          throw new Error(orderData.error);
+                      }
+                      return orderData.id;
+                  });
+              },
+      
+              onApprove: function(data, actions) {
+                  resultMessage('Processing payment...');
+                  
+                  return fetch(`/api/orders/${data.orderID}/capture`, {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json'
+                      }
+                  })
+                  .then(function(res) {
+                      if (!res.ok) {
+                          throw new Error('Payment failed');
+                      }
+                      return res.json();
+                  })
+                  .then(function(orderData) {
+                      if (orderData.error) {
+                          throw new Error(orderData.error);
+                      }
+                      
+                      if (orderData.status === 'COMPLETED') {
+                          resultMessage('Payment successful! Redirecting to course content...');
+                          setTimeout(() => {
+                              window.location.href = '/mlai';
+                          }, 2000);
+                      } else {
+                          throw new Error('Payment not completed');
+                      }
+                  })
+                  .catch(function(err) {
+                      resultMessage('Payment failed: ' + err.message);
+                      console.error('Payment error:', err);
+                  });
+              },
+      
+              onError: function(err) {
+                  console.error('PayPal error:', err);
+                  resultMessage('Payment error occurred. Please try again.');
+              }
+          }).render('#paypal-button-container');
+      </script>
+      
+  
+</body>
+
+</html>

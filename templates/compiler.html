@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Flux - Online Compiler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            background-color: #003366;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        .compiler-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .input-group,
+        .output-group {
+            margin: 15px 0;
+        }
+
+        select,
+        textarea,
+        input,
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4a90e2;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #357abd;
+            transform: translateY(-3px);
+        }
+
+        #output {
+            white-space: pre-wrap;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 50px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Compiler</h1>
+    </header>
+
+    <div class="compiler-container">
+        <div class="input-group">
+            <label for="language">Choose a language:</label>
+            <select id="language" onchange="loadDefaultCode()">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="code">Write your code here:</label>
+            <textarea id="code" rows="10" placeholder="Write your code here..."></textarea>
+        </div>
+
+        <!-- File upload section -->
+        <div class="input-group">
+            <label for="dataset">Upload a dataset:</label>
+            <input type="file" id="dataset" accept=".csv,.json,.txt" />
+        </div>
+
+        <button onclick="runCode()">Run</button>
+
+        <div class="output-group">
+            <h3>Output:</h3>
+            <div id="output">Your output will appear here</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Flux | Learn ML/AI engineers &amp; Programming</p>
+        <p>
+            <a href="/privacy" style="color: #fff; text-decoration: none; margin-right: 10px;">Privacy Policy</a>
+            <a href="/terms" style="color: #fff; text-decoration: none;">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/c/c.min.js"></script>
+
+    <script>
+        let editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+            lineNumbers: true,
+            mode: 'text/x-python',
+            theme: 'default',
+            lineWrapping: true
+        });
+
+        async function runCode() {
+            const code = editor.getValue();
+            const language = document.getElementById('language').value;
+            const dataset = document.getElementById('dataset').files[0];  // Get the uploaded file
+
+            let formData = new FormData();
+            formData.append('code', code);
+            formData.append('language', language);
+
+            // If a dataset is uploaded, append it to the form data
+            if (dataset) {
+                formData.append('dataset', dataset);
+            }
+
+            try {
+                const response = await fetch('/compile', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) throw new Error(`Server error: ${response.status}`);
+
+                const result = await response.json();
+                document.getElementById('output').innerText = result.output;
+            } catch (error) {
+                document.getElementById('output').innerText = `An error occurred: ${error.message}`;
+            }
+        }
+
+
+        async function executeCode(code, language, datasetContent) {
+            try {
+                const response = await fetch('/compile', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code, language, dataset: datasetContent })
+                });
+
+                if (!response.ok) throw new Error(`Server error: ${response.status}`);
+
+                const result = await response.json();
+                document.getElementById('output').innerText = result.output;
+            } catch (error) {
+                document.getElementById('output').innerText = `An error occurred: ${error.message}`;
+            }
+        }
+
+        async function loadDefaultCode() {
+            const language = document.getElementById('language').value;
+            const response = await fetch(`/get_code/${language}`);
+
+            if (response.ok) {
+                const data = await response.json();
+                editor.setValue(data.code);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadDefaultCode);
+    </script>
+
+</body>
+
+</html>

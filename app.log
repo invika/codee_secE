@@ -1,0 +1,365 @@
+2024-11-14 00:58:18,757 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 00:58:18,757 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 00:58:43,609 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-14 00:58:45,140 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 00:58:45,147 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 00:59:44,954 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.2:5000
+2024-11-14 00:59:44,955 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 00:59:44,957 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 00:59:46,282 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 00:59:46,300 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:03:08,078 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-14 01:03:08,127 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:03:09,504 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 01:03:09,520 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:05:06,714 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-14 01:05:06,785 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:09:09,890 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.2:5000
+2024-11-14 01:09:09,891 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 01:09:09,893 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:09:11,265 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 01:09:11,273 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:09:12,089 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:12] "[33mGET /mlai HTTP/1.1[0m" 404 -
+2024-11-14 01:09:41,316 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-14 01:09:41,371 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:09:42,685 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 01:09:42,685 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:09:47,390 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:47] "GET /mlai HTTP/1.1" 200 -
+2024-11-14 01:09:47,695 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:47] "GET /pdfs/intro_to_aiml.pdf HTTP/1.1" 200 -
+2024-11-14 01:09:47,700 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:47] "GET /pdfs/types_of_ml.pdf HTTP/1.1" 200 -
+2024-11-14 01:09:47,704 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:47] "GET /pdfs/setup_aiml_env.pdf HTTP/1.1" 200 -
+2024-11-14 01:09:47,706 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:47] "GET /pdfs/ai_model_security.pdf HTTP/1.1" 200 -
+2024-11-14 01:09:47,712 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:47] "GET /pdfs/deploying_ml_models.pdf HTTP/1.1" 200 -
+2024-11-14 01:09:47,713 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:09:47] "GET /pdfs/managing_ai_costs.pdf HTTP/1.1" 200 -
+2024-11-14 01:10:07,551 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-14 01:10:07,619 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:11:03,533 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.2:5000
+2024-11-14 01:11:03,533 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 01:11:03,545 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:11:04,863 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 01:11:04,880 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:11:06,546 - root - INFO - Accessing ML/AI page - Starting access check
+2024-11-14 01:11:06,546 - root - INFO - User ID 5 attempting to access ML/AI content
+2024-11-14 01:11:06,562 - root - INFO - Payment check results for user 5:
+2024-11-14 01:11:06,562 - root - INFO - has_paid status: 1
+2024-11-14 01:11:06,562 - root - INFO - payment status: COMPLETED
+2024-11-14 01:11:06,562 - root - INFO - last payment date: 2024-11-13 21:14:10
+2024-11-14 01:11:06,562 - root - INFO - Access granted to user 5 - Payment verified
+2024-11-14 01:11:06,562 - root - INFO - ML/AI page access check completed for user 5
+2024-11-14 01:11:06,562 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:06] "GET /mlai HTTP/1.1" 200 -
+2024-11-14 01:11:06,946 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:06] "[36mGET /pdfs/intro_to_aiml.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:11:06,950 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:06] "[36mGET /pdfs/types_of_ml.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:11:06,952 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:06] "[36mGET /pdfs/setup_aiml_env.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:11:06,958 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:06] "[36mGET /pdfs/ai_model_security.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:11:06,960 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:06] "[36mGET /pdfs/deploying_ml_models.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:11:06,962 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:06] "[36mGET /pdfs/managing_ai_costs.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:11:11,504 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:11] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-14 01:11:11,519 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:11] "[32mGET /home HTTP/1.1[0m" 302 -
+2024-11-14 01:11:11,542 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:11] "GET /login HTTP/1.1" 200 -
+2024-11-14 01:11:11,784 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:11] "GET /static/images/logo.png HTTP/1.1" 200 -
+2024-11-14 01:11:14,722 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:14] "GET /login HTTP/1.1" 200 -
+2024-11-14 01:11:14,780 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:14] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-14 01:11:25,693 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-14 01:11:25,709 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:25] "GET /verify_otp HTTP/1.1" 200 -
+2024-11-14 01:11:27,402 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:27] "GET /login HTTP/1.1" 200 -
+2024-11-14 01:11:35,663 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:35] "POST /login HTTP/1.1" 200 -
+2024-11-14 01:11:35,735 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:35] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-14 01:11:41,961 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:41] "GET /register HTTP/1.1" 200 -
+2024-11-14 01:11:42,007 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:42] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-14 01:11:58,964 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:58] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-11-14 01:11:58,974 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:11:58] "GET /verify_otp HTTP/1.1" 200 -
+2024-11-14 01:12:28,409 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:28] "[32mPOST /verify_otp HTTP/1.1[0m" 302 -
+2024-11-14 01:12:28,430 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:28] "GET /home HTTP/1.1" 200 -
+2024-11-14 01:12:28,551 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:28] "GET /static/images/online-classes-icon.png HTTP/1.1" 200 -
+2024-11-14 01:12:28,561 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:28] "GET /static/images/cloud-tools-icon.png HTTP/1.1" 200 -
+2024-11-14 01:12:28,679 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:28] "GET /static/images/community-icon.png HTTP/1.1" 200 -
+2024-11-14 01:12:28,683 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:28] "GET /static/images/profile_pictures/profile.jpg HTTP/1.1" 200 -
+2024-11-14 01:12:28,798 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:28] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 01:12:43,794 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:43] "GET /resources HTTP/1.1" 200 -
+2024-11-14 01:12:43,867 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:43] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:12:43,879 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:43] "GET /static/images/software-tools-icon.png HTTP/1.1" 200 -
+2024-11-14 01:12:43,998 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:43] "GET /static/images/programming-books-icon.png HTTP/1.1" 200 -
+2024-11-14 01:12:44,001 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:44] "GET /static/images/cloud-computing-icon.png HTTP/1.1" 200 -
+2024-11-14 01:12:45,794 - root - INFO - Accessing ML/AI page - Starting access check
+2024-11-14 01:12:45,795 - root - INFO - User ID 6 attempting to access ML/AI content
+2024-11-14 01:12:45,796 - root - INFO - Payment check results for user 6:
+2024-11-14 01:12:45,796 - root - INFO - has_paid status: 0
+2024-11-14 01:12:45,797 - root - INFO - payment status: NO_PAYMENT
+2024-11-14 01:12:45,797 - root - INFO - last payment date: NEVER
+2024-11-14 01:12:45,797 - root - WARNING - Access denied to user 6 - No payment found
+2024-11-14 01:12:45,798 - root - INFO - ML/AI page access check completed for user 6
+2024-11-14 01:12:45,799 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:45] "[32mGET /mlai HTTP/1.1[0m" 302 -
+2024-11-14 01:12:45,813 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:45] "GET /payment HTTP/1.1" 200 -
+2024-11-14 01:12:53,470 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:12:53] "POST /api/orders HTTP/1.1" 200 -
+2024-11-14 01:13:47,621 - root - INFO - Capturing order 7UP27916GD340482V
+2024-11-14 01:13:49,300 - root - INFO - Payment status: COMPLETED
+2024-11-14 01:13:49,317 - root - INFO - Payment recorded successfully for user 6
+2024-11-14 01:13:49,318 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:49] "POST /api/orders/7UP27916GD340482V/capture HTTP/1.1" 200 -
+2024-11-14 01:13:51,342 - root - INFO - Accessing ML/AI page - Starting access check
+2024-11-14 01:13:51,342 - root - INFO - User ID 6 attempting to access ML/AI content
+2024-11-14 01:13:51,342 - root - INFO - Payment check results for user 6:
+2024-11-14 01:13:51,342 - root - INFO - has_paid status: 1
+2024-11-14 01:13:51,342 - root - INFO - payment status: COMPLETED
+2024-11-14 01:13:51,342 - root - INFO - last payment date: 2024-11-13 22:13:49
+2024-11-14 01:13:51,342 - root - INFO - Access granted to user 6 - Payment verified
+2024-11-14 01:13:51,342 - root - INFO - ML/AI page access check completed for user 6
+2024-11-14 01:13:51,352 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:51] "GET /mlai HTTP/1.1" 200 -
+2024-11-14 01:13:51,667 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:51] "[36mGET /pdfs/intro_to_aiml.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:13:51,670 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:51] "[36mGET /pdfs/types_of_ml.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:13:51,673 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:51] "[36mGET /pdfs/setup_aiml_env.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:13:51,674 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:51] "[36mGET /pdfs/ai_model_security.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:13:51,681 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:51] "[36mGET /pdfs/deploying_ml_models.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:13:51,684 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:13:51] "[36mGET /pdfs/managing_ai_costs.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:14:08,509 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-14 01:14:08,521 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:08] "GET /login HTTP/1.1" 200 -
+2024-11-14 01:14:08,651 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:08] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-14 01:14:11,636 - root - INFO - Accessing ML/AI page - Starting access check
+2024-11-14 01:14:11,637 - root - INFO - User ID 6 attempting to access ML/AI content
+2024-11-14 01:14:11,638 - root - INFO - Payment check results for user 6:
+2024-11-14 01:14:11,638 - root - INFO - has_paid status: 1
+2024-11-14 01:14:11,639 - root - INFO - payment status: COMPLETED
+2024-11-14 01:14:11,639 - root - INFO - last payment date: 2024-11-13 22:13:49
+2024-11-14 01:14:11,639 - root - INFO - Access granted to user 6 - Payment verified
+2024-11-14 01:14:11,640 - root - INFO - ML/AI page access check completed for user 6
+2024-11-14 01:14:11,641 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:11] "GET /mlai HTTP/1.1" 200 -
+2024-11-14 01:14:12,019 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:12] "[36mGET /pdfs/intro_to_aiml.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:14:12,023 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:12] "[36mGET /pdfs/types_of_ml.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:14:12,029 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:12] "[36mGET /pdfs/setup_aiml_env.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:14:12,033 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:12] "[36mGET /pdfs/ai_model_security.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:14:12,037 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:12] "[36mGET /pdfs/deploying_ml_models.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:14:12,038 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:12] "[36mGET /pdfs/managing_ai_costs.pdf HTTP/1.1[0m" 304 -
+2024-11-14 01:14:14,529 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-14 01:14:14,542 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:14] "GET /login HTTP/1.1" 200 -
+2024-11-14 01:14:14,707 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:14] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-14 01:14:18,378 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:18] "GET /forgot_password HTTP/1.1" 200 -
+2024-11-14 01:14:23,096 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:23] "GET /register HTTP/1.1" 200 -
+2024-11-14 01:14:23,222 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:14:23] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-14 01:15:46,423 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:15:46] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-11-14 01:15:46,454 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:15:46] "GET /verify_otp HTTP/1.1" 200 -
+2024-11-14 01:16:06,067 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:06] "[32mPOST /verify_otp HTTP/1.1[0m" 302 -
+2024-11-14 01:16:06,153 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:06] "GET /home HTTP/1.1" 200 -
+2024-11-14 01:16:06,410 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:06] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:16:06,416 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:06] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:16:06,476 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:06] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:16:06,488 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:06] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 01:16:06,627 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:06] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 01:16:10,548 - root - INFO - Accessing ML/AI page - Starting access check
+2024-11-14 01:16:10,548 - root - INFO - User ID 7 attempting to access ML/AI content
+2024-11-14 01:16:10,549 - root - INFO - Payment check results for user 7:
+2024-11-14 01:16:10,550 - root - INFO - has_paid status: 0
+2024-11-14 01:16:10,550 - root - INFO - payment status: NO_PAYMENT
+2024-11-14 01:16:10,551 - root - INFO - last payment date: NEVER
+2024-11-14 01:16:10,551 - root - WARNING - Access denied to user 7 - No payment found
+2024-11-14 01:16:10,552 - root - INFO - ML/AI page access check completed for user 7
+2024-11-14 01:16:10,553 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:10] "[32mGET /mlai HTTP/1.1[0m" 302 -
+2024-11-14 01:16:10,565 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:10] "GET /payment HTTP/1.1" 200 -
+2024-11-14 01:16:17,452 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:16:17] "[33mGET /payment/ds HTTP/1.1[0m" 404 -
+2024-11-14 01:18:29,799 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-14 01:18:29,866 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:18:31,268 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 01:18:31,275 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:54:07,763 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.2:5000
+2024-11-14 01:54:07,763 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 01:54:07,779 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:54:09,310 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 01:54:09,326 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:58:15,359 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-14 01:58:15,423 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 01:58:16,806 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 01:58:16,822 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 01:59:23,782 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:23] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-14 01:59:23,797 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:23] "GET /home HTTP/1.1" 200 -
+2024-11-14 01:59:24,030 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:24] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:59:24,034 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:24] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:59:24,036 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:24] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:59:24,044 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:24] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 01:59:24,105 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:24] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 01:59:26,346 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:26] "GET /resources HTTP/1.1" 200 -
+2024-11-14 01:59:26,466 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:26] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:59:26,467 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:26] "[36mGET /static/images/software-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:59:26,528 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:26] "[36mGET /static/images/programming-books-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:59:26,528 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:26] "[36mGET /static/images/cloud-computing-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 01:59:29,915 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:29] "GET /quiz HTTP/1.1" 200 -
+2024-11-14 01:59:30,234 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:30] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-14 01:59:31,903 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 01:59:31] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-14 02:03:43,970 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:03:43] "GET /quiz HTTP/1.1" 200 -
+2024-11-14 02:03:44,260 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:03:44] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-14 02:03:46,270 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:03:46] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-14 02:04:12,506 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:04:12] "POST /compile HTTP/1.1" 200 -
+2024-11-14 02:04:13,307 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\code-storage\\main.py', reloading
+2024-11-14 02:04:13,370 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 02:04:14,819 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 02:04:14,827 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 02:09:02,978 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:02] "GET /home HTTP/1.1" 200 -
+2024-11-14 02:09:03,272 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:03] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:09:03,273 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:03] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:09:03,336 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:03] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 02:09:03,398 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:03] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:09:03,398 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:03] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 02:09:08,350 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:08] "POST /compile HTTP/1.1" 200 -
+2024-11-14 02:09:19,687 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:19] "GET /home HTTP/1.1" 200 -
+2024-11-14 02:09:19,752 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:19] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:09:19,754 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:19] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:09:19,886 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:19] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:09:19,887 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:19] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 02:09:19,992 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:19] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 02:09:24,342 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:09:24] "POST /compile HTTP/1.1" 200 -
+2024-11-14 02:10:49,498 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:49] "GET /home HTTP/1.1" 200 -
+2024-11-14 02:10:49,560 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:49] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:10:49,577 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:49] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:10:49,708 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:49] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:10:49,709 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:49] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 02:10:49,807 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:49] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 02:10:52,846 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:52] "POST /compile HTTP/1.1" 200 -
+2024-11-14 02:10:55,972 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:10:55] "POST /compile HTTP/1.1" 200 -
+2024-11-14 02:12:08,609 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:08] "GET /home HTTP/1.1" 200 -
+2024-11-14 02:12:08,688 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:08] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:12:08,702 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:08] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:12:08,836 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:08] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:12:08,841 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:08] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 02:12:08,941 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:08] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 02:12:08,944 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:08] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-14 02:12:10,712 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:10] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-14 02:12:45,306 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:45] "GET /home HTTP/1.1" 200 -
+2024-11-14 02:12:45,385 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:45] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:12:45,399 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:45] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:12:45,516 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:45] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:12:45,516 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:45] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 02:12:45,598 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:45] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-14 02:12:45,601 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:45] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 02:12:47,270 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:12:47] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-14 02:13:54,834 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:54] "GET /home HTTP/1.1" 200 -
+2024-11-14 02:13:54,942 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:54] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:13:54,942 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:54] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:13:55,060 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:55] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-14 02:13:55,060 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:55] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-14 02:13:55,144 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:55] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-14 02:13:55,147 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:55] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-14 02:13:56,829 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:13:56] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-14 02:14:00,059 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\code-storage\\main.py', reloading
+2024-11-14 02:14:00,128 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 02:14:01,479 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 02:14:01,492 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-14 02:14:06,471 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2024 02:14:06] "POST /compile HTTP/1.1" 200 -
+2024-11-14 02:14:06,705 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\code-storage\\main.py', reloading
+2024-11-14 02:14:06,768 - werkzeug - INFO -  * Restarting with stat
+2024-11-14 02:14:08,075 - werkzeug - WARNING -  * Debugger is active!
+2024-11-14 02:14:08,081 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-28 23:09:51,133 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.105.3:5000
+2024-11-28 23:09:51,135 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 23:09:51,135 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 23:09:53,045 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 23:09:53,045 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-28 23:10:06,117 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:06] "GET / HTTP/1.1" 200 -
+2024-11-28 23:10:08,145 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-28 23:10:11,445 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:11] "GET /login HTTP/1.1" 200 -
+2024-11-28 23:10:11,672 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:11] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:10:16,449 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:16] "GET /register HTTP/1.1" 200 -
+2024-11-28 23:10:16,556 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:16] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:10:29,048 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:29] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-11-28 23:10:29,072 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:29] "GET /verify_otp HTTP/1.1" 200 -
+2024-11-28 23:10:56,820 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:56] "[32mPOST /verify_otp HTTP/1.1[0m" 302 -
+2024-11-28 23:10:56,829 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:56] "GET /home HTTP/1.1" 200 -
+2024-11-28 23:10:57,027 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:57] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-28 23:10:57,033 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:57] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:10:57,035 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:57] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:10:57,036 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:57] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:10:57,039 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:57] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-28 23:10:57,048 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:57] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-28 23:10:58,621 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:10:58] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-28 23:11:00,434 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:11:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-28 23:11:00,440 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:11:00] "GET /login HTTP/1.1" 200 -
+2024-11-28 23:11:00,610 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:11:00] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:11:11,096 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:11:11] "POST /login HTTP/1.1" 200 -
+2024-11-28 23:11:11,194 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:11:11] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:11:46,781 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:11:46] "POST /login HTTP/1.1" 200 -
+2024-11-28 23:11:46,915 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:11:46] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:14:22,174 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-28 23:14:22,235 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 23:14:23,923 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 23:14:23,923 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-28 23:15:13,983 - root - WARNING - Invalid login attempt for email: nedase4538@ikowat.com
+2024-11-28 23:15:13,990 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:15:13] "POST /login HTTP/1.1" 200 -
+2024-11-28 23:15:14,208 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:15:14] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:17:37,504 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-28 23:17:37,565 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 23:17:39,346 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 23:17:39,346 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-28 23:17:44,639 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:17:44] "GET /register HTTP/1.1" 200 -
+2024-11-28 23:17:44,884 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:17:44] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:17:53,475 - root - INFO - User successfully inserted: titak77502@ikowat.com
+2024-11-28 23:17:53,475 - root - INFO - User exists in database after registration: <sqlite3.Row object at 0x000001DF506C1300>
+2024-11-28 23:17:55,379 - root - INFO - OTP updated in database for titak77502@ikowat.com
+2024-11-28 23:17:55,379 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:17:55] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-11-28 23:17:55,379 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:17:55] "GET /verify_otp HTTP/1.1" 200 -
+2024-11-28 23:18:29,759 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "[32mPOST /verify_otp HTTP/1.1[0m" 302 -
+2024-11-28 23:18:29,776 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "GET /home HTTP/1.1" 200 -
+2024-11-28 23:18:29,925 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-28 23:18:29,959 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:18:29,960 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:18:29,962 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-28 23:18:29,968 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:18:29,970 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:29] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-28 23:18:31,264 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:31] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-28 23:18:48,072 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-28 23:18:48,073 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:48] "GET /login HTTP/1.1" 200 -
+2024-11-28 23:18:48,236 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:48] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:18:54,870 - root - WARNING - Invalid login attempt for email: titak77502@ikowat.com
+2024-11-28 23:18:54,871 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:54] "POST /login HTTP/1.1" 200 -
+2024-11-28 23:18:54,963 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:18:54] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2024-11-28 23:19:12,210 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-28 23:19:12,272 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 23:19:14,116 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 23:19:14,124 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-28 23:20:00,352 - werkzeug - INFO -  * Detected change in 'D:\\Work\\Web\\Codeflux\\app.py', reloading
+2024-11-28 23:20:00,405 - werkzeug - INFO -  * Restarting with stat
+2024-11-28 23:20:02,127 - werkzeug - WARNING -  * Debugger is active!
+2024-11-28 23:20:02,143 - werkzeug - INFO -  * Debugger PIN: 406-770-469
+2024-11-28 23:20:23,486 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-28 23:20:23,500 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:23] "GET /verify_otp HTTP/1.1" 200 -
+2024-11-28 23:20:47,571 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:47] "[32mPOST /verify_otp HTTP/1.1[0m" 302 -
+2024-11-28 23:20:47,596 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:47] "GET /home HTTP/1.1" 200 -
+2024-11-28 23:20:47,759 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:47] "GET /compiler?hide_nav=true HTTP/1.1" 200 -
+2024-11-28 23:20:47,785 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:47] "[33mGET /static/images/cloud-banner.jpg HTTP/1.1[0m" 404 -
+2024-11-28 23:20:47,982 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:47] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:20:47,998 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:47] "[36mGET /static/images/cloud-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:20:48,098 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:48] "[36mGET /static/images/profile_pictures/profile.jpg HTTP/1.1[0m" 304 -
+2024-11-28 23:20:48,115 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:48] "[36mGET /static/images/community-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:20:48,961 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:20:48] "GET /get_code/python HTTP/1.1" 200 -
+2024-11-28 23:22:36,186 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:36] "GET /resources HTTP/1.1" 200 -
+2024-11-28 23:22:36,329 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:36] "[36mGET /static/images/online-classes-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:22:36,352 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:36] "[36mGET /static/images/software-tools-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:22:36,362 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:36] "[36mGET /static/images/programming-books-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:22:36,368 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:36] "[36mGET /static/images/cloud-computing-icon.png HTTP/1.1[0m" 304 -
+2024-11-28 23:22:38,403 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:38] "GET /programming HTTP/1.1" 200 -
+2024-11-28 23:22:40,669 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:40] "GET /pdfs/Introduction_to_Python_Programming_-_WEB.pdf HTTP/1.1" 200 -
+2024-11-28 23:22:40,670 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:40] "GET /pdfs/pdf1.pdf HTTP/1.1" 200 -
+2024-11-28 23:22:40,674 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:40] "GET /pdfs/python_modules.pdf HTTP/1.1" 200 -
+2024-11-28 23:22:40,674 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:40] "GET /pdfs/Learn%20Python%20The%20Hard%20Way%203rd%20Edition%20V413HAV.pdf HTTP/1.1" 200 -
+2024-11-28 23:22:45,190 - root - INFO - Accessing ML/AI page - Starting access check
+2024-11-28 23:22:45,191 - root - INFO - User ID 9 attempting to access ML/AI content
+2024-11-28 23:22:45,192 - root - INFO - Payment check results for user 9:
+2024-11-28 23:22:45,193 - root - INFO - has_paid status: 0
+2024-11-28 23:22:45,193 - root - INFO - payment status: NO_PAYMENT
+2024-11-28 23:22:45,193 - root - INFO - last payment date: NEVER
+2024-11-28 23:22:45,194 - root - WARNING - Access denied to user 9 - No payment found
+2024-11-28 23:22:45,195 - root - INFO - ML/AI page access check completed for user 9
+2024-11-28 23:22:45,196 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:45] "[32mGET /mlai HTTP/1.1[0m" 302 -
+2024-11-28 23:22:45,252 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:45] "GET /payment HTTP/1.1" 200 -
+2024-11-28 23:22:54,216 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:22:54] "POST /api/orders HTTP/1.1" 200 -
+2024-11-28 23:23:58,108 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2024 23:23:58] "POST /api/orders HTTP/1.1" 200 -

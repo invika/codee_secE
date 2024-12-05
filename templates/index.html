@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Flux - Your Learning Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef2f3;
+            color: #343a40;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+
+        .login-btn {
+            background-color: #fff;
+            color: #007bff;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .features {
+            padding: 60px 0;
+            background: #fff;
+        }
+
+        .feature-item {
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+            border: 1px solid #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #007bff;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #007bff;
+            margin: 10px auto;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .get-started {
+            background: #f0f8ff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .get-started h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .get-started p {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 767px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Welcome to Code Flux</h1>
+            <p>Your friendly learning portal for coding and ML/AI.</p>
+            <a class="login-btn" href="/login">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="features" class="features">
+            <h2 class="section-title text-center">Features</h2>
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-book fa-3x mb-3"></i>
+                    <h3>Resource Catalog</h3>
+                    <p>A well-structured catalog with various coding resources, including courses, tools, and books.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-user-plus fa-3x mb-3"></i>
+                    <h3>User Registration</h3>
+                    <p>Secure sign-up process with email verification and multifactor authentication for enhanced security.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-shopping-cart fa-3x mb-3"></i>
+                    <h3>Easy Checkout</h3>
+                    <p>Simplified checkout with clear order summaries and multiple payment options for user convenience.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-user-circle fa-3x mb-3"></i>
+                    <h3>User Profiles</h3>
+                    <p>Each user has a profile to track order history, manage their account, and receive personalized recommendations.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-star fa-3x mb-3"></i>
+                    <h3>Community Reviews</h3>
+                    <p>Users can rate and review resources to foster a helpful community and guide decisions.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                    <h3>Learning Hub</h3>
+                    <p>Access tutorials and hands-on activities to deepen your understanding of ML/AI and coding.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="get-started" class="get-started">
+            <h2>Ready to Start Your Coding Journey?</h2>
+            <p>Join us and explore the world of coding with Code Flux!</p>
+            <a class="btn btn-primary" href="/register">Get Started</a>
+        </section>
+
+        <section id="community" class="text-center">
+            <h2 class="section-title">Join Our Community</h2>
+            <p>Connect with other learners, share knowledge, and participate in discussions.</p>
+            <a class="btn btn-primary" href="/about">Visit Forum</a>
+        </section>
+
+        <section id="contact" class="text-center">
+            <h2 class="section-title">Contact Us</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+            <a class="btn btn-primary" href="/support">Contact Support</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Flux | Learn ML/AI engineers &amp; Programming</p>
+        <p>
+            <a href="/privacy" style="color: #fff; text-decoration: none; margin-right: 10px;">Privacy Policy</a>
+            <a href="/terms" style="color: #fff; text-decoration: none;">Terms of Service</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

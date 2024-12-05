@@ -1,0 +1,19 @@
+# Importing the math library for various calculations
+import math
+
+# Define a number to perform calculations on
+number = 16
+
+# Calculate the square root of the number
+sqrt_number = math.sqrt(number)
+print(f"The square root of {number} is: {sqrt_number}")
+
+# Calculate the area of a circle with a given radius
+radius = 5
+circle_area = math.pi * radius**2
+print(f"The area of a circle with radius {radius} is: {circle_area:.2f}")
+
+# Round a floating-point number to 2 decimal places
+float_number = 7.56789
+rounded_number = round(float_number, 2)
+print(f"The number {float_number} rounded to 2 decimal places is: {rounded_number}")

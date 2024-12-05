@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Flux - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            background-image: url('{{ url_for("static", filename="images/cloud-banner.jpg") }}');
+            background-size: cover;
+            background-position: center;
+            color: rgb(40, 28, 199);
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        .banner h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        .banner p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .banner a {
+            background-color: #ffcc00;
+            color: #003366;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .banner a:hover {
+            background-color: #ff9900;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .info-section div {
+            width: 30%;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .info-section div img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+        }
+        .info-section h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .info-section p {
+            font-size: 0.9rem;
+        }
+        .testimonials {
+            background-color: #e6f7ff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .testimonial-box {
+            display: inline-block;
+            width: 45%;
+            margin: 1rem;
+            padding: 1.5rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .testimonial-box img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+        .partners {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .partners img {
+            width: 150px;
+            margin: 0 15px;
+            opacity: 0.8;
+        }
+        .partners img:hover {
+            opacity: 1;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: relative;
+            width: 100%;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ff9900;
+        }
+        .cta-section {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .cta-section h2 {
+            margin-bottom: 1rem;
+        }
+        .cta-section a {
+            background-color: #ffcc00;
+            color: #003366;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .cta-section a:hover {
+            background-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Code Flux</h1>
+    <nav>
+        <ul>
+            <li><a href="/home">Homepage</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="banner">
+    <h1>Master AI/ML and Programming</h1>
+    <p>Join thousands of learners worldwide in building skills for the future</p>
+    <a href="/resources">Start Learning</a>
+</div>
+
+<!-- Main info section -->
+<section>
+    <h2>Your AI/ML and Coding Learning Hub</h2>
+    <p>Code Flux is a one-stop platform for learning AI/ML and coding. From absolute beginners to advanced developers, we provide high-quality tutorials, hands-on exercises, and expert guidance to help you succeed in your tech career.</p>
+
+    <!-- Highlights of what Code Flux offers -->
+    <div class="info-section">
+        <div>
+            <img src="{{ url_for('static', filename='images/online-classes-icon.png') }}" alt="Online Classes Icon">
+            <h3>Interactive Online Classes</h3>
+            <p>Join our live and on-demand classes taught by industry professionals, covering the latest in programming and AI/ML technology.</p>
+            <a href="/resources" class="learn-more">Explore Classes</a>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/cloud-tools-icon.png') }}" alt="AI/ML Tools Icon">
+            <h3>Cutting-edge AI/ML Tools</h3>
+            <p>Learn to work with leading AI/ML frameworks and platforms, and apply these tools to real-world scenarios.</p>
+            <a href="/resources" class="learn-more">Discover Tools</a>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/community-icon.png') }}" alt="Community Icon">
+            <h3>Collaborative Community</h3>
+            <p>Become part of a thriving community where you can discuss coding challenges, collaborate on projects, and network with peers.</p>
+            <a href="/about" class="learn-more">Join the Community</a>
+        </div>
+    </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<div class="cta-section">
+    <h2>Start Your Learning Journey Today!</h2>
+    <p>Access our resources and gain access to exclusive learning content and community features.</p>
+    <a href="/resources">Access Our Resources</a>
+</div>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Learners Say</h2>
+    <div class="testimonial-box">
+        <img src="{{ url_for('static', filename='images/user1.jpg') }}" alt="User Photo">
+        <p>"Code Flux has been a game changer in my career! The tutorials on AI/ML were easy to follow and practical."</p>
+        <h4>- Matthew Virat, AI/ML Developer</h4>
+    </div>
+    <div class="testimonial-box">
+        <img src="{{ url_for('static', filename='images/user2.jpg') }}" alt="User Photo">
+        <p>"Thanks to Code Flux, I was able to land a job as a Data Scientist. The community is also very supportive!"</p>
+        <h4>- Catherine Mike, Data Scientist</h4>
+    </div>
+</section>
+
+<!-- Partners/Logos Section -->
+<section class="partners">
+    <h2>Our Partners</h2>
+    <img src="{{ url_for('static', filename='images/partner1-logo.png') }}" alt="Partner 1 Logo">
+    <img src="{{ url_for('static', filename='images/partner2-logo.png') }}" alt="Partner 2 Logo">
+    <img src="{{ url_for('static', filename='images/partner3-logo.png') }}" alt="Partner 3 Logo">
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Code Flux | All Rights Reserved</p>
+    <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>

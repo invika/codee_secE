@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- PayPal SDK Script -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AVR3ZqZLe3XzU7kYArOBZFRBQbO6yuC7saCn92_l4gCJTSZA-aQF0kAxjopj4ZpofLnPc0hDTummn7M3"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            background: linear-gradient(135deg, #003366, #00509e);
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e0e7ff, #f0f4ff);
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00509e, #003366);
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .book-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .book {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .book:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .book-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #00509e;
+            color: #fff;
+            position: relative;
+        }
+
+        .book-title i {
+            margin-right: 8px;
+            color: #ffd700;
+        }
+
+        .pdf-viewer {
+            height: 350px;
+            overflow: hidden;
+            border-radius: 0 0 12px 12px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background: linear-gradient(to right, #003366, #00509e);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .pdf-viewer {
+                height: 280px;
+            }
+        }
+
+        #cart {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        #cart h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        #cart-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cart-items li {
+            margin-bottom: 8px;
+        }
+
+        #paypal-button-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Programming Books</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/home">Home Page</a></li>
+            <li><a href="/security">Security</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="book-container">
+        <div class="book">
+            <div class="book-title"><i class="fas fa-book"></i>Book 1: Introduction to Python</div>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='pdf1.pdf') }}" title="Book 1"></iframe>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-title"><i class="fas fa-book"></i>Book 2: Python Modules</div>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='python_modules.pdf') }}" title="Book 2"></iframe>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-title"><i class="fas fa-book"></i>Book 3: Introduction to Python Programming</div>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='Introduction_to_Python_Programming_-_WEB.pdf') }}" title="Book 3"></iframe>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-title"><i class="fas fa-book"></i>Book 4: Learn Python The Hard Way 3rd Edition V413HAV</div>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='Learn Python The Hard Way 3rd Edition V413HAV.pdf') }}" title="Book 4"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Flux | Learn ML/AI engineers &amp; Programming</p>
+        <p>
+            <a href="/privacy" style="color: #fff; text-decoration: none; margin-right: 10px;">Privacy Policy</a>
+            <a href="/terms" style="color: #fff; text-decoration: none;">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+
+</html>

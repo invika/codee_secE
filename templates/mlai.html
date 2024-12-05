@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML Engineering Tutorials - Code Flux</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            animation: slideDown 0.6s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            background-color: #003366;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        section {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            max-width: 1000px;
+            margin: 3rem auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #003366;
+        }
+
+        .tutorial {
+            background-color: #28a745;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tutorial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tutorial h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tutorial p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tutorial ul {
+            text-align: left;
+            margin-bottom: 1.5rem;
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+
+        .pdf-viewer {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pdf-viewer iframe {
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+            font-size: 1.1rem;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dark-mode-toggle {
+            margin: 1rem;
+            padding: 1rem;
+            cursor: pointer;
+            border: 2px solid #003366;
+            background-color: #ffdd57;
+            color: #003366;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark-mode-toggle:hover {
+            background-color: #003366;
+            color: white;
+        }
+
+        .live-chart-support {
+            background-color: #17a2b8;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .live-chart-support iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .project-repository {
+            background-color: #ffc107;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-repository a {
+            color: #003366;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-repository a:hover {
+            text-decoration: underline;
+        }
+
+        .quiz-compiler-links {
+            background-color: #6f42c1;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-compiler-links a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .quiz-compiler-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 1rem 0;
+            }
+
+            section {
+                padding: 2rem;
+            }
+
+            .tutorial {
+                padding: 1.5rem;
+            }
+
+            .pdf-viewer iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AI/ML Engineering Tutorials</h1>
+        <p>Learn, Explore, and Implement AI/ML concepts and tools</p>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/security">Security</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Explore Our AI/ML Engineering Tutorials</h2>
+
+        <!-- Live Chart/Support Section -->
+        <div class="live-chart-support">
+            <h3>Live Chart/Support</h3>
+            <p>Interactive charts and real-time support to visualize AI/ML concepts</p>
+            <iframe src="https://www.chartjs.org/samples/latest/" title="Live Chart"></iframe>
+        </div>
+
+        <!-- AI/ML Project Repository -->
+        <div class="project-repository">
+            <h3>AI/ML Project Repository</h3>
+            <p>Explore our collection of AI/ML projects and resources.</p>
+            <a href="/repository">Visit Repository</a>
+        </div>
+
+        <div class="tutorial">
+            <h3>1. Introduction to AI/ML Engineering</h3>
+            <p>AI/ML engineering focuses on developing systems that can learn from data and make decisions. This tutorial provides an overview of AI/ML fundamentals, frameworks, and key algorithms.</p>
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Understand the basics of AI and machine learning.</li>
+                <li>Identify major ML frameworks and libraries.</li>
+                <li>Learn foundational ML algorithms and models.</li>
+            </ul>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='intro_to_aiml.pdf') }}" title="Introduction to AI/ML Engineering"></iframe>
+            </div>
+        </div>
+
+        <div class="tutorial">
+            <h3>2. Types of Machine Learning</h3>
+            <p>This tutorial explores supervised, unsupervised, and reinforcement learning, with examples and applications for each.</p>
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Understand different learning paradigms in AI.</li>
+                <li>Identify common use cases for each type of ML.</li>
+                <li>Explore specific techniques and algorithms.</li>
+            </ul>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='types_of_ml.pdf') }}" title="Types of Machine Learning"></iframe>
+            </div>
+        </div>
+
+        <div class="tutorial">
+            <h3>3. Setting Up an AI Development Environment</h3>
+            <p>This tutorial walks through setting up a development environment for AI/ML projects, including popular tools and libraries.</p>
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Install and configure essential AI/ML libraries.</li>
+                <li>Set up Jupyter notebooks and IDEs.</li>
+                <li>Learn basic project setup for AI models.</li>
+            </ul>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='setup_aiml_env.pdf') }}" title="Setting Up an AI Development Environment"></iframe>
+            </div>
+        </div>
+
+        <div class="tutorial">
+            <h3>4. Best Practices in AI Model Security</h3>
+            <p>This tutorial covers best practices for securing AI models against common threats, including model inversion and data poisoning.</p>
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Identify key security risks in AI/ML.</li>
+                <li>Learn how to protect models from attacks.</li>
+                <li>Understand the importance of privacy-preserving AI.</li>
+            </ul>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='ai_model_security.pdf') }}" title="AI Model Security Best Practices"></iframe>
+            </div>
+        </div>
+
+        <div class="tutorial">
+            <h3>5. Deploying Machine Learning Models</h3>
+            <p>This tutorial covers model deployment strategies, including containerization and cloud-based solutions.</p>
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Learn about deploying ML models in production.</li>
+                <li>Explore containerization and orchestration tools like Docker and Kubernetes.</li>
+                <li>Understand deployment strategies such as A/B testing and canary releases.</li>
+            </ul>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='deploying_ml_models.pdf') }}" title="Deploying Machine Learning Models"></iframe>
+            </div>
+        </div>
+
+        <div class="tutorial">
+            <h3>6. Managing AI Project Costs</h3>
+            <p>This tutorial provides strategies for managing and optimizing AI project costs.</p>
+            <h4>Objectives:</h4>
+            <ul>
+                <li>Understand the cost drivers in AI projects.</li>
+                <li>Learn how to optimize hardware, data, and personnel costs.</li>
+                <li>Explore cloud cost management for AI workloads.</li>
+            </ul>
+            <div class="pdf-viewer">
+                <iframe src="{{ url_for('serve_pdf', filename='managing_ai_costs.pdf') }}" title="Managing AI Project Costs"></iframe>
+            </div>
+        </div>
+
+        <!-- Quiz and Compiler Links -->
+        <div class="quiz-compiler-links">
+            <h3>Interactive Tools</h3>
+            <a href="/quiz">Take the AI/ML Quiz</a>
+            <a href="/compiler">Access the AI/ML Compiler</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI/ML Engineering Tutorials by Code Flux. <br> <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle Functionality
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+
+</body>
+
+</html>

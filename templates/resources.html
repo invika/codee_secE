@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Flux - Resources</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            margin-top: 1rem;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 3rem 2rem;
+        }
+        .catalog {
+            background-color: #ffffff;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+        .catalog h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #003366;
+            text-align: center;
+        }
+        .catalog ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            justify-items: center;
+        }
+        .catalog ul li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #e5e5e5;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .catalog ul li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .catalog ul li img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        .catalog ul li a {
+            text-decoration: none;
+            color: #003366;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .catalog ul li a:hover {
+            color: #ffcc00;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CodeFlux Resources</h1>
+    <nav>
+        <ul>
+            <li><a href="/home">Home Page</a></li>
+            <li><a href="/security">Security</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="catalog">
+    <h2>Resource Catalog</h2>
+    <ul>
+        <li>
+            <a href="/quiz">
+                <img src="{{ url_for('static', filename='images/online-classes-icon.png') }}" alt="Online Quizzes">
+                Online Quizzes
+            </a>
+        </li>
+        <li>
+            <a href="/compiler">
+                <img src="{{ url_for('static', filename='images/software-tools-icon.png') }}" alt="Software Tools">
+                Software Tools
+            </a>
+        </li>
+        <li>
+            <a href="/programming">
+                <img src="{{ url_for('static', filename='images/programming-books-icon.png') }}" alt="Programming Books">
+                Programming Books
+            </a>
+        </li>
+        <li>
+            <a href="/mlai">
+                <img src="{{ url_for('static', filename='images/cloud-computing-icon.png') }}" alt="AI/ML Activities">
+                AI/ML Activities
+            </a>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Code Flux | Learn ML/AI engineers &amp; Programming</p>
+    <p>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+    </p>
+</footer>
+
+</body>
+</html>
